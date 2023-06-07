@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://www.onlygfx.com/wp-content/uploads/2021/04/white-triangle-pattern-seamless-background-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+p {
+  font-family: 'Ubuntu';
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2E2E2E;
+  color: #2E2E2E;
+} 
+
+.home,
+.contato {
+  margin-top: 15px;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  margin-left: 10px;
+  color: #2E2E2E;
+}
+
+.home-link {
+  color: #2E2E2E;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.home-link:hover {
+  color: #707070;
+}
+
+.principal {
+  margin-top: 60px;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  margin-left: 10px;
+  color: #2E2E2E;
+}
+
+.principal-p {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 0px;
+  color: #2E2E2E;
+}
+
+.button {
+  background-color: #2E2E2E; 
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 60px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.button-2 {
+  background-color: #2E2E2E; 
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 60px;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.project-1 {
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.project-1:hover {
+  color: #707070;
+}
+
+.project-2 {
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.project-2:hover {
+  color: #707070;
+}
+
+.clicked {
+  animation: buttonAnimation 0.2s linear;
+}
+
+.caminho {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 30px;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
