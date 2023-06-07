@@ -1,15 +1,17 @@
 import React from "react";
+import "./contato.css";
 
 function Contato() {
   return (
     <div>
-      <h1>Contato</h1>
-      <p>Entre em contato conosco através dos seguintes meios:</p>
+      <p className="texto-p-contato">Feel free to contact me through the following means:</p>
+      <div className="elementos-contato">
       <ul>
-        <li>Email: contato@example.com</li>
-        <li>Telefone: (123) 456-7890</li>
-        <li>Endereço: 123 Main Street, City</li>
+        <li>Email: diego05.pimentel@gmail.com</li>
+        <li>Phone number: +55 (21) 970309593</li>
+        <li>Address: Rua Ernestina 73, Rio de Janeiro/RJ, Brasil</li>
       </ul>
+      </div>
     </div>
   );
 }

@@ -36,7 +36,7 @@ function App() {
         <div className="contato">
           <h2>
             <a href="#" className="home-link" onClick={handleClick2}>
-              Contato
+              Contact
             </a>
           </h2>
         </div>
@@ -44,24 +44,18 @@ function App() {
 
       {activePage === "home" ? (
         <div className="principal">
-          <h1>Seja bem-vindo!</h1>
+          <h1>Welcome!</h1>
           <p className="principal-p">
-            Como um futuro Desenvolvedor Full Stack, tenho competências em várias
-            linguagens de programação, incluindo HTML, CSS, JavaScript, React.js,
-            React Native e PHP.
+            As a future Full Stack Developer, I have skills in various programming languages, including HTML, CSS, JavaScript, React.js, React Native, and PHP.
             <br />
             <br />
-            Em resumo, minhas habilidades abrangem uma ampla gama de tecnologias,
-            permitindo-me desenvolver soluções completas tanto para o front-end
-            quanto para o back-end. Estou constantemente atualizando meu
-            conhecimento e me adaptando às novas tendências do setor, a fim de
-            fornecer as melhores soluções possíveis aos projetos em que trabalho.
+            In summary, my skills encompass a wide range of technologies, allowing me to develop comprehensive solutions for both front-end and back-end. I am constantly updating my knowledge and adapting to new industry trends in order to provide the best possible solutions to the projects I work on.
           </p>
 
           <div className={`button ${isClicked1 ? "clicked" : ""}`} onClick={handleClick1}>
             <h1>
               <a href="https://www.youtube.com/" className="project-1">
-                Projeto 1
+                Project 1
               </a>
             </h1>
           </div>
@@ -69,7 +63,7 @@ function App() {
           <div className={`button-2 ${isClicked2 ? "clicked" : ""}`} onClick={handleClick2}>
             <h1>
               <a href="https://www.youtube.com/" className="project-2">
-                Projeto 2
+                Project 2
               </a>
             </h1>
           </div>
