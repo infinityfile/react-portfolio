@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <nav className="nav-bar">
         <div className="home">
           <h2>
@@ -55,7 +55,7 @@ function App() {
           <div className={`button ${isClicked1 ? "clicked" : ""}`} onClick={handleClick1}>
             <h1>
               <a href="https://github.com/DiegoCPJPKR/cybersecurityproject/tree/main/CyberSecurity" className="project-1">
-                Project 1
+                <span>Project 1</span>
               </a>
             </h1>
           </div>
@@ -63,7 +63,7 @@ function App() {
           <div className={`button-2 ${isClicked2 ? "clicked" : ""}`} onClick={handleClick2}>
             <h1>
               <a href="https://github.com/DiegoCPJPKR/react-portfolio" className="project-2">
-                Project 2
+                <span>Project 2</span>
               </a>
             </h1>
           </div>
