@@ -8,19 +8,23 @@ function App() {
   const [activePage, setActivePage] = useState("home");
 
   const handleClick1 = () => {
-    setIsClicked1(true);
-    setTimeout(() => {
-      setIsClicked1(false);
-    }, 200);
-    setActivePage("home");
+    if (activePage !== "home") {
+      setIsClicked1(true);
+      setTimeout(() => {
+        setIsClicked1(false);
+      }, 200);
+      setActivePage("home");
+    }
   };
 
   const handleClick2 = () => {
-    setIsClicked2(true);
-    setTimeout(() => {
-      setIsClicked2(false);
-    }, 200);
-    setActivePage("contato");
+    if (activePage !== "contato") {
+      setIsClicked2(true);
+      setTimeout(() => {
+        setIsClicked2(false);
+      }, 200);
+      setActivePage("contato");
+    }
   };
 
   return (
