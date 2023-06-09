@@ -6,9 +6,9 @@
 
 .container {
     
-	background: linear-gradient(-45deg, #FFFF, #e7e7e7, #d6d6d6, #c9c9c9);
+	background: linear-gradient(-45deg, #FFFF, #d3d3d3, #b1b1b1, #ffffff);
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+	animation: gradient 10s ease infinite;
 	height: 100vh;
 }
 
@@ -38,17 +38,19 @@ p {
   justify-content: flex-start;
   align-items: center;
   padding: 5px 0px;
+  margin-left: -10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #2E2E2E;
   color: #2E2E2E;
 } 
 
 .home,
+.curriculum,
 .contato {
   margin-top: 15px;
   font-family: 'Roboto', 'sans-serif';
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
   color: #2E2E2E;
 }
 
@@ -92,26 +94,6 @@ p {
   cursor: pointer;
 }
 
-.button span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button-2 span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button:hover span {
-    font-size: 22px;
-}
-
-.button-2:hover span {
-    font-size: 22px;
-}
-
 .button-2 {
   background-color: #2E2E2E; 
   border-radius: 20px;
@@ -126,34 +108,49 @@ p {
   cursor: pointer;
 }
 
+.button-3{
+  background-color: #2E2E2E; 
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 60px;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.button-3 span,
+.button-2 span,
+.button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-3:hover span,
+.button-2:hover span,
+.button:hover span {
+    font-size: 22px;
+}
+
+.project-3,
+.project-2,
 .project-1 {
   text-decoration: none;
   transition: color 0.2s ease-in;
 }
 
+.project-3:hover,
+.project-2:hover,
 .project-1:hover {
-  color: #707070;
-}
-
-.project-2 {
-  text-decoration: none;
-  transition: color 0.2s ease-in;
-}
-
-.project-2:hover {
   color: #707070;
 }
 
 .clicked {
   animation: buttonAnimation 0.2s linear;
-}
-
-.caminho {
-  display: block;
-  margin: 0 auto;
-  width: 400px;
-  margin-top: 30px;
-  position: relative;
 }
 
 @keyframes buttonAnimation {
@@ -166,4 +163,12 @@ p {
   100% {
     transform: scale(1);
   }
+}
+
+.caminho {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 30px;
+  position: relative;
 }
