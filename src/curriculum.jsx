@@ -12,9 +12,7 @@ function Curriculum() {
           https://drive.google.com/file/d/1eAKD4t4ieZAcdugmCQQtvMZUENH0kAFW/view?usp=sharing
         </a>
       </div>
-      <div className="curriculum-img">
-        <img src="https://cdn-icons-png.flaticon.com/512/942/942807.png" alt="curriculum"></img>
-      </div>
+        <img src="https://bayifoundation.org/wp-content/uploads/2020/07/service_default_avatar_182956.png" alt="curriculum" className="curriculum-img"></img>
     </div>
   );
 }

@@ -84,6 +84,7 @@ p {
   text-decoration: none;
   cursor: pointer;
   box-shadow: 0 2px 16px rgba(0, 0, 0, .1);
+  border: none;
 }
 
 .buttons {
@@ -95,7 +96,7 @@ p {
 .project {
     font-size: 16px;
     font-family: 'Roboto', 'sans-serif';
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .project:hover {
@@ -117,6 +118,10 @@ p {
   100% {
     transform: scale(1);
   }
+}
+
+.background-png {
+    margin: 80px auto;
 }
 
 .caminho {
@@ -178,4 +183,3 @@ p {
     z-index: 1;
 
 }
-

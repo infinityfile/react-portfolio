@@ -27,11 +27,14 @@ color: #2E2E2E;
 
 
 .curriculum-img {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 60px;
-width: 100px; 
-height: auto;
-margin: 120px auto;
+  width: 350px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 140px auto;
+  animation-name: spin;
+  animation-duration: 60s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
 }
