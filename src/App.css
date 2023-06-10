@@ -5,16 +5,11 @@
 }
 
 .container {
-    
-	background: linear-gradient(-45deg, #FFFF, #d3d3d3, #b1b1b1, #ffffff);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
-}
-
-.backimage {
-    background-repeat: no-repeat;
-
+    width: 100%;
+    background: linear-gradient(-45deg, #FFFF, #d3d3d3, #b1b1b1, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
 }
 
 @keyframes gradient {
@@ -65,11 +60,11 @@ p {
 }
 
 .principal {
-  margin-top: 60px;
   font-family: 'Roboto', 'sans-serif';
   font-size: 20px;
-  margin-left: 10px;
   color: #2E2E2E;
+  width: 700px;
+  margin: 60px auto 0;
 }
 
 .principal-p {
@@ -86,67 +81,26 @@ p {
   color: white;
   padding: 15px 32px;
   margin-top: 60px;
-  margin-left: 5px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
   cursor: pointer;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, .1);
 }
 
-.button-2 {
-  background-color: #2E2E2E; 
-  border-radius: 20px;
-  color: white;
-  padding: 15px 32px;
-  margin-top: 60px;
-  margin-left: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-  cursor: pointer;
+.buttons {
+    justify-content: center;
+    display: flex;
+    gap: 40px;
 }
 
-.button-3{
-  background-color: #2E2E2E; 
-  border-radius: 20px;
-  color: white;
-  padding: 15px 32px;
-  margin-top: 60px;
-  margin-left: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-  cursor: pointer;
+.project {
+    font-size: 16px;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 400;
 }
 
-.button-3 span,
-.button-2 span,
-.button span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button-3:hover span,
-.button-2:hover span,
-.button:hover span {
-    font-size: 22px;
-}
-
-.project-3,
-.project-2,
-.project-1 {
-  text-decoration: none;
-  transition: color 0.2s ease-in;
-}
-
-.project-3:hover,
-.project-2:hover,
-.project-1:hover {
-  color: #707070;
+.project:hover {
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
 }
 
 .clicked {
@@ -166,9 +120,62 @@ p {
 }
 
 .caminho {
-  display: block;
-  margin: 0 auto;
-  width: 400px;
-  margin-top: 30px;
-  position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 100px;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 120s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+    opacity: 0.1;
+    z-index: 1;
 }
+
+.square {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-left: 0px;
+    margin-top: -100px;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 60s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+    opacity: 0.1;
+    z-index: 1;    
+}
+
+.triangle {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    margin-left: 600px;
+    margin-top: -100px;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 20s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.cube {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    margin-left: 800px;
+    margin-top: -50px;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 180s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;
+    opacity: 0.1;
+    z-index: 1;
+
+}
+

@@ -3,7 +3,7 @@ import "./curriculum.css";
 
 function Curriculum() {
   return (
-    <div>
+    <div className="container-curriculum">
       <div className="cv-text">
         <h1>Here you can find my CV</h1>
       </div>

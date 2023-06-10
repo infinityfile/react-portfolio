@@ -38,6 +38,14 @@ function App() {
     }
   };
 
+  const animateButton = (event) => {
+    const button = event.currentTarget;
+    button.classList.add("clicked");
+    setTimeout(() => {
+      button.classList.remove("clicked");
+    }, 200);
+  };
+
   return (
     <div className={`container ${isReloading ? "hidden" : ""}`}>
       {isReloading ? (
@@ -71,6 +79,7 @@ function App() {
           </nav>
 
           {activePage === "home" ? (
+
             <div className="principal">
               <h1>Welcome!</h1>
               <p className="principal-p">
@@ -80,35 +89,39 @@ function App() {
                 In summary, my skills encompass a wide range of technologies, allowing me to develop comprehensive solutions for both front-end and back-end. I am constantly updating my knowledge and adapting to new industry trends in order to provide the best possible solutions to the projects I work on.
               </p>
 
-              <div className="button">
-                <h1>
-                  <a href="https://github.com/DiegoCPJPKR/cybersecurityproject/tree/main/CyberSecurity" className="project-1">
-                    <span>Project 1</span>
+
+
+              <div className="buttons">
+                <button className="button" onClick={animateButton}>
+                  <a href="https://github.com/DiegoCPJPKR/cybersecurityproject/tree/main/CyberSecurity" className="project">
+                    Project 1
                   </a>
-                </h1>
+                </button>
+
+                <button className="button" onClick={animateButton}>
+                  <a href="https://github.com/DiegoCPJPKR/react-portfolio" className="project">
+                    Project 2
+                  </a>
+                </button>
+
+                <button className="button" onClick={animateButton}>
+                  <a href="https://github.com/DiegoCPJPKR/aluraproject" className="project">
+                    Project 3
+                  </a>
+                </button>
               </div>
 
-              <div className="button-2">
-                <h1>
-                  <a href="https://github.com/DiegoCPJPKR/react-portfolio" className="project-2">
-                    <span>Project 2</span>
-                  </a>
-                </h1>
-              </div>
 
-              <div className="button-3">
-                <h1>
-                  <a href="https://github.com/DiegoCPJPKR/aluraproject" className="project-3">
-                    <span>Project 3</span>
-                  </a>
-                </h1>
-              </div>
-
+            <div className="background-png">
               <img
                 src="https://community.coreldraw.com/resized-image.ashx/__size/680x1000/__key/CommunityServer.Discussions.Components.Files/543/4530.Dotted-line.png"
                 alt="caminho"
                 className="caminho"
               ></img>
+              <img src="https://cdn-icons-png.flaticon.com/512/35/35472.png" alt='square' className="square"></img>
+              <img src="https://cdn.icon-icons.com/icons2/935/PNG/512/play-triangle-outline_icon-icons.com_73185.png" alt='triangle' className="triangle"></img>
+              <img src="https://cdn-icons-png.flaticon.com/512/57/57581.png" alt='cube' className="cube"></img>
+            </div>
             </div>
           ) : activePage === "contato" ? (
             <Contato />

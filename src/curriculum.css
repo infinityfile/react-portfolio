@@ -1,28 +1,37 @@
+.container-curriculum {
+  width: 700px;
+  margin: 60px auto 0;
+}
+
 .cv-text {
-    margin-top: 60px;
-    font-family: 'Roboto', 'sans-serif';
-    font-size: 20px;
-    margin-left: 10px;
-    color: #2E2E2E;
-  }
-  
-  .cv-link {
-    margin-top: 15px;
-    font-family: 'Roboto', 'sans-serif';
-    font-size: 18px;
-    margin-left: 5px;
-    color: #2E2E2E;
-  }
-  
-  .curriculum-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-  
-  .curriculum-img img {
-    width: 300px; 
-    height: auto; 
-  }
-  
+margin-top: 60px;
+font-family: 'Roboto', 'sans-serif';
+font-size: 20px;
+margin-left: 10px;
+color: #2E2E2E;
+}
+
+.cv-link {
+margin-top: 15px;
+font-family: 'Roboto', 'sans-serif';
+font-size: 18px;
+margin-left: 5px;
+color: #2E2E2E;
+}
+
+.cv-link:hover {
+  font-size: 19px;
+  transition: 0.5s ease-in-out; 
+  position: relative; 
+}
+
+
+.curriculum-img {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 60px;
+width: 100px; 
+height: auto;
+margin: 120px auto;
+}

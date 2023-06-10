@@ -4,7 +4,7 @@ import "./contato.css";
 
 function Contato() {
   return (
-    <div>
+    <div className="container-contact">
       <h1 className="texto-p-contato">Feel free to contact me through the following means:</h1>
       <div className="elementos-contato">
       <ul>
